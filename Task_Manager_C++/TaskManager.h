@@ -11,5 +11,6 @@ class TaskManager{
     void removeTask(int id);
     void removeAllTasks();
     bool OkTask(int id);
+    void setTaskOk(int id);
     void afficheTasks();
 };

@@ -36,7 +36,7 @@ int main() {
                 std::cout << "Quelle tâche souhaitez-vous marquer comme terminée (entrez le numéro) ?" << std::endl;
                 int i;
                 std::cin >> i;
-                T.OkTask(i - 1);
+                T.setTaskOk(i);
                 std::cout << "Tâche marquée comme terminée !" << std::endl;
                 break;
             }

@@ -55,6 +55,14 @@ bool TaskManager::OkTask(int id) {
     return false;
 }
 
+void TaskManager::setTaskOk(int id){
+    for (Task& task : tasks) {
+        if (task.getId() == id) {
+            task.setTaskDone(true);
+        }
+    }
+}
+
 void TaskManager::afficheTasks(){
     for (const Task& task : tasks) {
         cout << "<---><---><---><---><---><---><---><--->" << endl;
