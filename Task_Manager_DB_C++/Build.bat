@@ -1,7 +1,7 @@
 @echo off
 
 REM Compilation des fichiers source C++
-g++ main.cpp TaskManagerDB.cpp Task.cpp -o Main -lsqlite3
+g++ main.cpp TaskManagerDB.cpp -o Main -lsqlite3
 
 REM Vérification du statut de la compilation
 if %errorlevel% equ 0 (

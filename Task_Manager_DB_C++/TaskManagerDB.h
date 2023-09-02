@@ -1,6 +1,7 @@
-#include "Task.h"
 #include <sqlite3.h>
-
+#include <iostream>
+#include <string>
+using namespace std;
 
 class TaskManagerDB {
     private:
